@@ -68,9 +68,9 @@
         },
     };
 
-    // app.get("/", (req, res) => {
-    //     res.send('Hello World!');
-    // });
+      app.get("/", (req, res) => {
+      res.redirect("/listings"); // Or res.send("Welcome to Wanderlust!")
+     });
     
     
      app.use(session(sessionoptions));
